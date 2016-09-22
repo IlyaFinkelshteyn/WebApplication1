@@ -10,6 +10,8 @@ build:
   publish_wap_xcopy: true
   verbosity: minimal
 deploy_script:
+- ps: Write-host "starting questionable script";
+- ps: Write-host "deploy_project: " + $env:deploy_project
 - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/deploy.ps1'))
 - ps: $artifacts.values | foreach-object {$_.path}
 
