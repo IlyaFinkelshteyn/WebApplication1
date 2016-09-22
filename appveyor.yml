@@ -10,7 +10,7 @@ build:
   publish_wap_xcopy: true
   verbosity: minimal
 deploy_script:
-
+- ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/deploy.ps1'))
 - ps: $artifacts.values | foreach-object {$_.path}
 
 - ps: $packageweb = $artifacts.values | Where-Object { $_.path -like '*WebApplication1.zip' }
