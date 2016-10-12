@@ -6,7 +6,4 @@
   <parameter name="LogName" defaultValue="FROM-PARAMETER">
     <parameterEntry kind="XmlFile" scope="\\web.config$" match="/configuration/appSettings/add[@key='LogName']/@value" />
   </parameter>
-  <parameter name="LogName" defaultValue="default-log.txt">
-    <parameterEntry kind="XmlFile" scope="\\web.config$" match="/configuration/log4net/appender/file/@value" />
-  </parameter>
 </parameters>
