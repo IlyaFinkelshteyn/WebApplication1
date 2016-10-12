@@ -1,0 +1,13 @@
+Parameters.xml
+<?xml version="1.0" encoding="utf-8" ?>
+<parameters>
+  <parameter name="LoggingStatus" defaultValue="FROM-PARAMETER">
+    <parameterEntry kind="XmlFile" scope="\\web.config$" match="/configuration/appSettings/add[@key='LoggingStatus']/@value" />
+  </parameter>
+  <parameter name="LogName" defaultValue="FROM-PARAMETER">
+    <parameterEntry kind="XmlFile" scope="\\web.config$" match="/configuration/appSettings/add[@key='LogName']/@value" />
+  </parameter>
+  <parameter name="LogName" defaultValue="default-log.txt">
+    <parameterEntry kind="XmlFile" scope="\\web.config$" match="/configuration/log4net/appender/file/@value" />
+  </parameter>
+</parameters>
