@@ -4,6 +4,6 @@
     <parameterEntry kind="XmlFile" scope="\\web.config$" match="/configuration/appSettings/add[@key='LogsPath']/@value" />
   </parameter>
   <parameter name="PartnerIdentityProviderName">
-    <parameterEntry kind="textFile" scope="saml" match="@@nameplaceholder@@" />
+    <parameterEntry kind="textFile" scope="\\saml.txt$" match="@@nameplaceholder@@" />
   </parameter>
 </parameters>
