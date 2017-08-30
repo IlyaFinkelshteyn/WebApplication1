@@ -1,0 +1,16 @@
+version: 1.0.{build}
+environment:
+  LogsPath: c:\test\logs\log131.txt
+  PartnerIdentityProviderName: AnotherName14
+install:
+- cmd: nuget restore
+build:
+  publish_wap: true
+  verbosity: minimal
+deploy:
+- provider: WebDeploy
+  server: https://ilyaf3.scm.azurewebsites.net/msdeploy.axd?site=ilyaf3
+  website: ilyaf3
+  username: $ilyaf3
+  password:
+    secure: wo3gqImLjckquy1VnmwSL/S6H1Q1m7t6iKUGcvhKrzDDTIsBB2Qd2rz6Nmz6d9i9nTT5B1ci017GElrkKdf0ow==
