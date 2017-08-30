@@ -1,7 +1,7 @@
 version: 1.0.{build}
 environment:
-  LogsPath: c:\test\logs\log131.txt
-  PartnerIdentityProviderName: AnotherName14
+  LogsPath: c:\test\logs\log34.txt
+  PartnerIdentityProviderName: AnotherName34
 install:
 - cmd: nuget restore
 build:
