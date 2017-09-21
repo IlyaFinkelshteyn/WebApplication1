@@ -1,4 +1,8 @@
-version: 1.0.{build}
+# - Follew https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-portal#connect-to-file-share to create share and copy "connect" command
+# - add key from command line as a secure variable
+# - add command line to install stage. Remove [drive letter] and replace key with secure variable
+# - Add the folloping command before 'nuget restore': mklink /D %APPVEYOR_BUILD_FOLDER%\packages \\nugetpackagestest.file.core.windows.net\packages
+
 environment:
   AZURE_SMB_KEY:
     secure: KjGZBVM6DxI5875FxQwzjjSSHfp75SkUVuDi6Rhyd+xprLTEp0jf4mYQ64aoojxeH57neIE669VkvnBJV5Jj2T19jc+P+Bpw9eobrrcBoDOFE3yBCHf2y/vzyJcQtNLe
