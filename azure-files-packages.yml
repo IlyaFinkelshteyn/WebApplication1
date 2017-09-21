@@ -1,0 +1,11 @@
+version: 1.0.{build}
+environment:
+  AZURE_SMB_KEY:
+    secure: KjGZBVM6DxI5875FxQwzjjSSHfp75SkUVuDi6Rhyd+xprLTEp0jf4mYQ64aoojxeH57neIE669VkvnBJV5Jj2T19jc+P+Bpw9eobrrcBoDOFE3yBCHf2y/vzyJcQtNLe
+install:
+- cmd: |
+    net use P: \\nugetpackagestest.file.core.windows.net\packages  /u:AZURE\nugetpackagestest %AZURE_SMB_KEY%
+    mklink /D %APPVEYOR_BUILD_FOLDER%\packages \\nugetpackagestest.file.core.windows.net\packages
+    nuget restore
+build:
+  verbosity: minimal
