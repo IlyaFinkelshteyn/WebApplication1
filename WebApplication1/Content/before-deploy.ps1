@@ -1,1 +1,1 @@
-write-host "before-deploy.ps1"
+Write-host "APPLICATION_SITE_NAME: $env:APPLICATION_SITE_NAME"
