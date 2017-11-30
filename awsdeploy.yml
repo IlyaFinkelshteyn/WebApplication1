@@ -1,21 +1,17 @@
 version: 1.0.{build}
 image: Visual Studio 2015
 environment:
-  AWSAccessKeyId: AKIAIODIUCY3ETD6M5VQ
+  AWSAccessKeyId: AKIAINJHMYLFXULA3HKA
   AWSSecretKey:
-    secure: LEvzbXpiLkWVvswonFHnAYV9ZS6fEFL3wswjTcIQ6ZXC5j1nynd6N0Bs/VFS8Pa4
+    secure: yc31WRArURVdTDtBn9PRG4GJ0wHvc9OgeFdOIfm6EMjLnLbILsbk3Dvap8gZrKND
 before_build:
 - ps: nuget restore
 build:
   publish_wap_xcopy: true
   verbosity: minimal
 deploy_script:
-- ps: Write-host "starting questionable script"
-- ps: Write-host $env:deploy_project
-- ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/deploy.ps1'))
 - ps: $artifacts.values | foreach-object {$_.path}
 
 - ps: $packageweb = $artifacts.values | Where-Object { $_.path -like '*WebApplication1.zip' }
 - ps: $exe = "C:\Program Files (x86)\AWS Tools\Deployment Tool\awsdeploy.exe"
-
-#- ps: &$exe -w "-DDeploymentPackage=$($packageweb.path)" "-DEnvironment.Name=MyAppWeb-test123" "-DApplication.Name=MyAppWeb123" "-DRegion=eu-west-1" "-DAWSAccessKey=$env:AWSAccessKeyId" "-DAWSSecretKey=$env:AWSSecretKey" "C:\projects\WebApplication1\awsdeploy.txt"
+- ps: &$exe -w "-DDeploymentPackage=$($packageweb.path)" "-DEnvironment.Name=Myappweb123-env" "-DApplication.Name=MyAppWeb123" "-DRegion=eu-west-1" "-DAWSAccessKey=$env:AWSAccessKeyId" "-DAWSSecretKey=$env:AWSSecretKey" "C:\projects\WebApplication1\awsdeploy.txt"
