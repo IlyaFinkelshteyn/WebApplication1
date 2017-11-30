@@ -4,13 +4,11 @@ environment:
   AWSAccessKeyId: AKIAINJHMYLFXULA3HKA
   AWSSecretKey:
     secure: yc31WRArURVdTDtBn9PRG4GJ0wHvc9OgeFdOIfm6EMjLnLbILsbk3Dvap8gZrKND
-before_build:
-- ps: nuget restore
-build:
-  publish_wap_xcopy: true
-  verbosity: minimal
-after_build:
-- msbuild "C:\projects\webapplication2\WebApplication1.sln" /verbosity:minimal /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /p:DeployOnBuild=True /p:PublishProfile=appveyor /p:DeployIisAppPath="Default Web Site"
+
+build_script:
+- nuget restore
+- msbuild "WebApplication1\WebApplication1.csproj" /verbosity:minimal /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /t:Package /p:PackageLocation=%APPVEYOR_BUILD_FOLDER%\artifact1 /p:DeployIisAppPath="Default Web Site"
+- appveyor PushArtifact artifact1 -Type WebDeployPackage
 
 deploy_script:
 - ps: $artifacts.values | foreach-object {$_.path}
