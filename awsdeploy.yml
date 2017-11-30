@@ -7,8 +7,8 @@ environment:
 
 build_script:
 - nuget restore
-- msbuild "WebApplication1\WebApplication1.csproj" /verbosity:minimal /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /t:Package /p:PackageLocation=%APPVEYOR_BUILD_FOLDER%\artifact1 /p:DeployIisAppPath="Default Web Site"
-- appveyor PushArtifact artifact1 -Type WebDeployPackage
+- msbuild "WebApplication1\WebApplication1.csproj" /verbosity:minimal /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /t:Package /p:PackageLocation=%APPVEYOR_BUILD_FOLDER%\artifact1.zip /p:DeployIisAppPath="Default Web Site"
+- appveyor PushArtifact artifact1.zip -Type WebDeployPackage
 
 deploy_script:
 - ps: $artifacts.values | foreach-object {$_.path}
