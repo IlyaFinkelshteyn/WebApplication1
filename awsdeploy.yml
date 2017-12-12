@@ -11,7 +11,7 @@ build_script:
 - appveyor PushArtifact artifact1.zip -Type WebDeployPackage
 
 deploy_script:
-- ps: $webdeploy_package = ($artifacts.values | Where-Object {$_.path -like '*ppwssr-release.zip'}).path
+- ps: $webdeploy_package = ($artifacts.values | Where-Object {$_.path -like '*artifact1.zip'}).path
 - echo %webdeploy_package%
 - ps: $artifacts.values | foreach-object {$_.path}
 - ps: $packageweb = $artifacts.values | Where-Object { $_.path -like '*artifact1.zip' }
