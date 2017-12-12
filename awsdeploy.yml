@@ -11,8 +11,6 @@ build_script:
 - appveyor PushArtifact artifact1.zip -Type WebDeployPackage
 
 deploy_script:
-- ps: $env:webdeploy_package = ($artifacts.values | Where-Object {$_.path -like '*artifact1.zip'}).path
-- echo %webdeploy_package%
 - ps: $artifacts.values | foreach-object {$_.path}
 - ps: $packageweb = $artifacts.values | Where-Object { $_.path -like '*artifact1.zip' }
 - ps: $exe = "C:\Program Files (x86)\AWS Tools\Deployment Tool\awsdeploy.exe"
