@@ -1,0 +1,15 @@
+install:
+- ps: |
+    $env:testString = Get-Random -Minimum 10000 -Maximum 10000000
+    $newContent = (Get-Content WebApplication1/Views/Home/Index.cshtml).Replace("ASP.NET", $env:testString)
+    Set-Content -Value $newContent -Path  WebApplication1/Views/Home/Index.cshtml
+before_build:
+- cmd: nuget restore
+build:
+  publish_wap_xcopy: true
+  verbosity: minimal
+deploy:
+- provider: Environment
+  name: ZipDeploy
+after_deploy:
+- ps: $count = 0; while (!(Invoke-WebRequest https://ilyaf-zd2.azurewebsites.net).Content.Contains($env:testString) -and $count -lt 10){$count++; if($count -eq 10){throw "site was not updated"}; write-host "attempt $count"; sleep 10}
