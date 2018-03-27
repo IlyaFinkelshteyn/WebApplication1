@@ -8,9 +8,8 @@ build:
   verbosity: minimal
 
 before_deploy:
-- ps: $env:APPVEYOR_SCHEDULED_BUILD
+# make it explicitely "False" if not scheudled. It is NULL in this case by default
 - ps: $env:APPVEYOR_SCHEDULED_BUILD = if ($env:APPVEYOR_SCHEDULED_BUILD -eq "True") {"True"} else {"False"} 
-- ps: $env:APPVEYOR_SCHEDULED_BUIL
 
 deploy:
 - provider: Environment
