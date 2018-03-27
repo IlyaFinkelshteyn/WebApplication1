@@ -7,7 +7,12 @@ build:
   publish_wap: true
   verbosity: minimal
 
+before_deploy:
+- ps: $env:APPVEYOR_SCHEDULED_BUILD
+- ps: $env:APPVEYOR_SCHEDULED_BUILD = if ($env:APPVEYOR_SCHEDULED_BUILD -eq "True") {"True"} else {"False"} 
+- ps: $env:APPVEYOR_SCHEDULED_BUIL
+
 deploy:
 - provider: Environment
   name: IIS2
-  APPVEYOR_SCHEDULED_BUILD: $(APPVEYOR_SCHEDULED_BUILD)
+  APPVEYOR_SCHEDULED_BUIL: $(APPVEYOR_SCHEDULED_BUIL)
