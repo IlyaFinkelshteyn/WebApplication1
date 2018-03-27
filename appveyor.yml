@@ -10,3 +10,4 @@ build:
 deploy:
 - provider: Environment
   name: IIS2
+  APPVEYOR_SCHEDULED_BUILD: $(APPVEYOR_SCHEDULED_BUILD)
