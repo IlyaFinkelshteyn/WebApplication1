@@ -1,0 +1,11 @@
+version: 1.0.{build}
+before_build:
+- cmd: nuget restore -verbosity quiet
+build:
+  publish_wap: true
+  verbosity: quiet
+test: off
+deploy:
+- provider: Environment
+  name: IIS2
+  short_name: test12
