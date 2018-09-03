@@ -1,142 +1,142 @@
 version: 1.0.{build}
 environment:
   matrix:
-  - appveyor_build_worker_cloud: lw-host-01-d
+  - appveyor_build_worker_cloud: lw-host-01-vs2017-d
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-01-d
+  - appveyor_build_worker_cloud: lw-host-01-vs2017-d
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-01-e
+  - appveyor_build_worker_cloud: lw-host-01-vs2017-e
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-01-e
+  - appveyor_build_worker_cloud: lw-host-01-vs2017-e
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-01-f
+  - appveyor_build_worker_cloud: lw-host-01-vs2017-f
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-01-f
+  - appveyor_build_worker_cloud: lw-host-01-vs2017-f
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-01-g
+  - appveyor_build_worker_cloud: lw-host-01-vs2017-g
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-01-g
+  - appveyor_build_worker_cloud: lw-host-01-vs2017-g
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
   
-  - appveyor_build_worker_cloud: lw-host-02-d
+  - appveyor_build_worker_cloud: lw-host-02-vs2017-d
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-02-d
+  - appveyor_build_worker_cloud: lw-host-02-vs2017-d
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-02-e
+  - appveyor_build_worker_cloud: lw-host-02-vs2017-e
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-02-e
+  - appveyor_build_worker_cloud: lw-host-02-vs2017-e
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-02-f
+  - appveyor_build_worker_cloud: lw-host-02-vs2017-f
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-02-f
+  - appveyor_build_worker_cloud: lw-host-02-vs2017-f
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-02-g
+  - appveyor_build_worker_cloud: lw-host-02-vs2017-g
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-02-g
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-    
-  - appveyor_build_worker_cloud: lw-host-03-d
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-03-d
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-03-e
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-03-e
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-03-f
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-03-f
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-03-g
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-03-g
+  - appveyor_build_worker_cloud: lw-host-02-vs2017-g
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
     
-  - appveyor_build_worker_cloud: lw-host-04-d
+  - appveyor_build_worker_cloud: lw-host-03-vs2017-d
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-04-d
+  - appveyor_build_worker_cloud: lw-host-03-vs2017-d
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-04-e
+  - appveyor_build_worker_cloud: lw-host-03-vs2017-e
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-04-e
+  - appveyor_build_worker_cloud: lw-host-03-vs2017-e
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-04-f
+  - appveyor_build_worker_cloud: lw-host-03-vs2017-f
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-04-f
+  - appveyor_build_worker_cloud: lw-host-03-vs2017-f
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-04-g
+  - appveyor_build_worker_cloud: lw-host-03-vs2017-g
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-04-g
+  - appveyor_build_worker_cloud: lw-host-03-vs2017-g
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+    
+  - appveyor_build_worker_cloud: lw-host-04-vs2017-d
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+  - appveyor_build_worker_cloud: lw-host-04-vs2017-d
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+  - appveyor_build_worker_cloud: lw-host-04-vs2017-e
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+  - appveyor_build_worker_cloud: lw-host-04-vs2017-e
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+  - appveyor_build_worker_cloud: lw-host-04-vs2017-f
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+  - appveyor_build_worker_cloud: lw-host-04-vs2017-f
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+  - appveyor_build_worker_cloud: lw-host-04-vs2017-g
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+  - appveyor_build_worker_cloud: lw-host-04-vs2017-g
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
 
-  - appveyor_build_worker_cloud: lw-host-05-d
+  - appveyor_build_worker_cloud: lw-host-05-vs2017-d
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-05-d
+  - appveyor_build_worker_cloud: lw-host-05-vs2017-d
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-05-e
+  - appveyor_build_worker_cloud: lw-host-05-vs2017-e
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-05-e
+  - appveyor_build_worker_cloud: lw-host-05-vs2017-e
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-05-f
+  - appveyor_build_worker_cloud: lw-host-05-vs2017-f
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-05-f
+  - appveyor_build_worker_cloud: lw-host-05-vs2017-f
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-05-g
+  - appveyor_build_worker_cloud: lw-host-05-vs2017-g
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-05-g
+  - appveyor_build_worker_cloud: lw-host-05-vs2017-g
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
     
-  - appveyor_build_worker_cloud: lw-host-06-d
+  - appveyor_build_worker_cloud: lw-host-06-vs2017-d
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-06-d
+  - appveyor_build_worker_cloud: lw-host-06-vs2017-d
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-06-e
+  - appveyor_build_worker_cloud: lw-host-06-vs2017-e
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-06-e
+  - appveyor_build_worker_cloud: lw-host-06-vs2017-e
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-06-f
+  - appveyor_build_worker_cloud: lw-host-06-vs2017-f
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-06-f
+  - appveyor_build_worker_cloud: lw-host-06-vs2017-f
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-06-g
+  - appveyor_build_worker_cloud: lw-host-06-vs2017-g
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-06-g
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  
-  - appveyor_build_worker_cloud: lw-host-07-d
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-07-d
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-07-e
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-07-e
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-07-f
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-07-f
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-07-g
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-07-g
+  - appveyor_build_worker_cloud: lw-host-06-vs2017-g
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
   
-  - appveyor_build_worker_cloud: lw-host-08-d
+  - appveyor_build_worker_cloud: lw-host-07-vs2017-d
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-08-d
+  - appveyor_build_worker_cloud: lw-host-07-vs2017-d
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-08-e
+  - appveyor_build_worker_cloud: lw-host-07-vs2017-e
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-08-e
+  - appveyor_build_worker_cloud: lw-host-07-vs2017-e
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-08-f
+  - appveyor_build_worker_cloud: lw-host-07-vs2017-f
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-08-f
+  - appveyor_build_worker_cloud: lw-host-07-vs2017-f
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-08-g
+  - appveyor_build_worker_cloud: lw-host-07-vs2017-g
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  - appveyor_build_worker_cloud: lw-host-08-g
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017 
+  - appveyor_build_worker_cloud: lw-host-07-vs2017-g
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
   
+  - appveyor_build_worker_cloud: lw-host-08-vs2017-d
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+  - appveyor_build_worker_cloud: lw-host-08-vs2017-d
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+  - appveyor_build_worker_cloud: lw-host-08-vs2017-e
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+  - appveyor_build_worker_cloud: lw-host-08-vs2017-e
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+  - appveyor_build_worker_cloud: lw-host-08-vs2017-f
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+  - appveyor_build_worker_cloud: lw-host-08-vs2017-f
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+  - appveyor_build_worker_cloud: lw-host-08-vs2017-g
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+  - appveyor_build_worker_cloud: lw-host-08-vs2017-g
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+    
 services: iis
 before_build:
 - cmd: nuget restore -verbosity quiet
