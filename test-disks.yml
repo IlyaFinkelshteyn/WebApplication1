@@ -1,0 +1,100 @@
+version: 1.0.{build}
+environment:
+  matrix:
+  - appveyor_build_worker_cloud: lw-host-09-d
+  - appveyor_build_worker_cloud: lw-host-09-d
+  - appveyor_build_worker_cloud: lw-host-09-e
+  - appveyor_build_worker_cloud: lw-host-09-e
+  - appveyor_build_worker_cloud: lw-host-09-f
+  - appveyor_build_worker_cloud: lw-host-09-f
+  - appveyor_build_worker_cloud: lw-host-09-g
+  - appveyor_build_worker_cloud: lw-host-09-g
+  
+  - appveyor_build_worker_cloud: lw-host-10-d
+  - appveyor_build_worker_cloud: lw-host-10-d
+  - appveyor_build_worker_cloud: lw-host-10-e
+  - appveyor_build_worker_cloud: lw-host-10-e
+  - appveyor_build_worker_cloud: lw-host-10-f
+  - appveyor_build_worker_cloud: lw-host-10-f
+  - appveyor_build_worker_cloud: lw-host-10-g
+  - appveyor_build_worker_cloud: lw-host-10-g
+  
+  - appveyor_build_worker_cloud: lw-host-11-d
+  - appveyor_build_worker_cloud: lw-host-11-d
+  - appveyor_build_worker_cloud: lw-host-11-e
+  - appveyor_build_worker_cloud: lw-host-11-e
+  - appveyor_build_worker_cloud: lw-host-11-f
+  - appveyor_build_worker_cloud: lw-host-11-f
+  - appveyor_build_worker_cloud: lw-host-11-g
+  - appveyor_build_worker_cloud: lw-host-11-g
+  
+  - appveyor_build_worker_cloud: lw-host-12-d
+  - appveyor_build_worker_cloud: lw-host-12-d
+  - appveyor_build_worker_cloud: lw-host-12-e
+  - appveyor_build_worker_cloud: lw-host-12-e
+  - appveyor_build_worker_cloud: lw-host-12-f
+  - appveyor_build_worker_cloud: lw-host-12-f
+  - appveyor_build_worker_cloud: lw-host-12-g
+  - appveyor_build_worker_cloud: lw-host-12-g
+  
+  - appveyor_build_worker_cloud: lw-host-13-d
+  - appveyor_build_worker_cloud: lw-host-13-d
+  - appveyor_build_worker_cloud: lw-host-13-e
+  - appveyor_build_worker_cloud: lw-host-13-e
+  - appveyor_build_worker_cloud: lw-host-13-f
+  - appveyor_build_worker_cloud: lw-host-13-f
+  - appveyor_build_worker_cloud: lw-host-13-g
+  - appveyor_build_worker_cloud: lw-host-13-g
+  
+  - appveyor_build_worker_cloud: lw-host-14-d
+  - appveyor_build_worker_cloud: lw-host-14-d
+  - appveyor_build_worker_cloud: lw-host-14-e
+  - appveyor_build_worker_cloud: lw-host-14-e
+  - appveyor_build_worker_cloud: lw-host-14-f
+  - appveyor_build_worker_cloud: lw-host-14-f
+  - appveyor_build_worker_cloud: lw-host-14-g
+  - appveyor_build_worker_cloud: lw-host-14-g
+  
+  - appveyor_build_worker_cloud: lw-host-15-d
+  - appveyor_build_worker_cloud: lw-host-15-d
+  - appveyor_build_worker_cloud: lw-host-15-e
+  - appveyor_build_worker_cloud: lw-host-15-e
+  - appveyor_build_worker_cloud: lw-host-15-f
+  - appveyor_build_worker_cloud: lw-host-15-f
+  - appveyor_build_worker_cloud: lw-host-15-g
+  - appveyor_build_worker_cloud: lw-host-15-g
+  
+  - appveyor_build_worker_cloud: lw-host-16-d
+  - appveyor_build_worker_cloud: lw-host-16-d
+  - appveyor_build_worker_cloud: lw-host-16-e
+  - appveyor_build_worker_cloud: lw-host-16-e
+  - appveyor_build_worker_cloud: lw-host-16-f
+  - appveyor_build_worker_cloud: lw-host-16-f
+  - appveyor_build_worker_cloud: lw-host-16-g
+  - appveyor_build_worker_cloud: lw-host-16-g
+  
+  - appveyor_build_worker_cloud: lw-host-17-d
+  - appveyor_build_worker_cloud: lw-host-17-d
+  - appveyor_build_worker_cloud: lw-host-17-e
+  - appveyor_build_worker_cloud: lw-host-17-e
+  - appveyor_build_worker_cloud: lw-host-17-f
+  - appveyor_build_worker_cloud: lw-host-17-f
+  - appveyor_build_worker_cloud: lw-host-17-g
+  - appveyor_build_worker_cloud: lw-host-17-g
+  
+  - appveyor_build_worker_cloud: lw-host-18-d
+  - appveyor_build_worker_cloud: lw-host-18-d
+  - appveyor_build_worker_cloud: lw-host-18-e
+  - appveyor_build_worker_cloud: lw-host-18-e
+  - appveyor_build_worker_cloud: lw-host-18-f
+  - appveyor_build_worker_cloud: lw-host-18-f
+  - appveyor_build_worker_cloud: lw-host-18-g
+  - appveyor_build_worker_cloud: lw-host-18-g
+  
+services: iis
+before_build:
+- cmd: nuget restore -verbosity quiet
+build:
+  publish_wap_beanstalk: true
+  verbosity: quiet
+test: off
