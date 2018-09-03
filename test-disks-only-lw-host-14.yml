@@ -2,6 +2,9 @@ version: 1.0.{build}
 
 image: Visual Studio 2015 2
 
+install:
+- cmd: curl -L https://api.github.com/repos/SeleniumHQ/selenium/zipball/master -o a.zip
+
 environment:
   matrix:
   - appveyor_build_worker_cloud: lw-host-14-d
