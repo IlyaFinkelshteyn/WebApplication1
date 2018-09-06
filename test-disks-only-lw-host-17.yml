@@ -14,7 +14,9 @@ environment:
   - appveyor_build_worker_cloud: lw-host-17-d
   - appveyor_build_worker_cloud: lw-host-17-d
   - appveyor_build_worker_cloud: lw-host-17-d
+  - appveyor_build_worker_cloud: lw-host-17-d
 
+  - appveyor_build_worker_cloud: lw-host-17-e
   - appveyor_build_worker_cloud: lw-host-17-e
   - appveyor_build_worker_cloud: lw-host-17-e
   - appveyor_build_worker_cloud: lw-host-17-e
@@ -24,7 +26,9 @@ environment:
   - appveyor_build_worker_cloud: lw-host-17-f
   - appveyor_build_worker_cloud: lw-host-17-f
   - appveyor_build_worker_cloud: lw-host-17-f
+  - appveyor_build_worker_cloud: lw-host-17-f
 
+  - appveyor_build_worker_cloud: lw-host-17-g
   - appveyor_build_worker_cloud: lw-host-17-g
   - appveyor_build_worker_cloud: lw-host-17-g
   - appveyor_build_worker_cloud: lw-host-17-g
