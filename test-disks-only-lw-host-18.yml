@@ -1,7 +1,6 @@
 version: 1.0.{build}
 
-image: 
-  - Previous Visual Studio 2015
+image:   
   - Visual Studio 2015
 
 install:
@@ -13,25 +12,47 @@ environment:
   - appveyor_build_worker_cloud: lw-host-18-d
   - appveyor_build_worker_cloud: lw-host-18-d
   - appveyor_build_worker_cloud: lw-host-18-d
+  - appveyor_build_worker_cloud: lw-host-18-d
+  - appveyor_build_worker_cloud: lw-host-18-d
+  - appveyor_build_worker_cloud: lw-host-18-d
+  - appveyor_build_worker_cloud: lw-host-18-d
+  #- appveyor_build_worker_cloud: lw-host-18-d
   #- appveyor_build_worker_cloud: lw-host-18-d
 
   - appveyor_build_worker_cloud: lw-host-18-e
   - appveyor_build_worker_cloud: lw-host-18-e
   - appveyor_build_worker_cloud: lw-host-18-e
   - appveyor_build_worker_cloud: lw-host-18-e
+  - appveyor_build_worker_cloud: lw-host-18-e
+  - appveyor_build_worker_cloud: lw-host-18-e
+  - appveyor_build_worker_cloud: lw-host-18-e
+  - appveyor_build_worker_cloud: lw-host-18-e
+  #- appveyor_build_worker_cloud: lw-host-18-e
   #- appveyor_build_worker_cloud: lw-host-18-e
   
   - appveyor_build_worker_cloud: lw-host-18-f
   - appveyor_build_worker_cloud: lw-host-18-f
   - appveyor_build_worker_cloud: lw-host-18-f
   - appveyor_build_worker_cloud: lw-host-18-f
+  - appveyor_build_worker_cloud: lw-host-18-f
+  - appveyor_build_worker_cloud: lw-host-18-f
+  - appveyor_build_worker_cloud: lw-host-18-f
+  - appveyor_build_worker_cloud: lw-host-18-f
   #- appveyor_build_worker_cloud: lw-host-18-f
+  #- appveyor_build_worker_cloud: lw-host-18-f
+
 
   - appveyor_build_worker_cloud: lw-host-18-g
   - appveyor_build_worker_cloud: lw-host-18-g
   - appveyor_build_worker_cloud: lw-host-18-g
   - appveyor_build_worker_cloud: lw-host-18-g
+  - appveyor_build_worker_cloud: lw-host-18-g
+  - appveyor_build_worker_cloud: lw-host-18-g
+  - appveyor_build_worker_cloud: lw-host-18-g
+  - appveyor_build_worker_cloud: lw-host-18-g
   #- appveyor_build_worker_cloud: lw-host-18-g
+  #- appveyor_build_worker_cloud: lw-host-18-g
+
 
 services:
 - iis
