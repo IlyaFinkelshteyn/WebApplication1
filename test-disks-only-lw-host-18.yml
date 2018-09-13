@@ -17,7 +17,7 @@ environment:
   - appveyor_build_worker_cloud: lw-host-18-d
   - appveyor_build_worker_cloud: lw-host-18-d
   - appveyor_build_worker_cloud: lw-host-18-d
-  #- appveyor_build_worker_cloud: lw-host-18-d
+  - appveyor_build_worker_cloud: lw-host-18-d
 
   - appveyor_build_worker_cloud: lw-host-18-e
   - appveyor_build_worker_cloud: lw-host-18-e
@@ -28,7 +28,7 @@ environment:
   - appveyor_build_worker_cloud: lw-host-18-e
   - appveyor_build_worker_cloud: lw-host-18-e
   - appveyor_build_worker_cloud: lw-host-18-e
-  #- appveyor_build_worker_cloud: lw-host-18-e
+  - appveyor_build_worker_cloud: lw-host-18-e
   
   - appveyor_build_worker_cloud: lw-host-18-f
   - appveyor_build_worker_cloud: lw-host-18-f
@@ -39,7 +39,7 @@ environment:
   - appveyor_build_worker_cloud: lw-host-18-f
   - appveyor_build_worker_cloud: lw-host-18-f
   - appveyor_build_worker_cloud: lw-host-18-f
-  #- appveyor_build_worker_cloud: lw-host-18-f
+  - appveyor_build_worker_cloud: lw-host-18-f
 
 
   - appveyor_build_worker_cloud: lw-host-18-g
@@ -51,7 +51,7 @@ environment:
   - appveyor_build_worker_cloud: lw-host-18-g
   - appveyor_build_worker_cloud: lw-host-18-g
   - appveyor_build_worker_cloud: lw-host-18-g
-  #- appveyor_build_worker_cloud: lw-host-18-g
+  - appveyor_build_worker_cloud: lw-host-18-g
 
 
 services:
