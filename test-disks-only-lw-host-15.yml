@@ -59,7 +59,7 @@ services:
 - mssql2014
 
 before_build:
-- ps: if ((Get-Service 'MSSQL$SQLEXPRESS').Status -ne "Running") {throw "SQL did not start"}
+- ps: if ((Get-Service 'MSSQL$SQL2014').Status -ne "Running") {throw "SQL did not start"}
 - cmd: nuget restore
 
 build:
