@@ -8,26 +8,26 @@ install:
 
 environment:
   matrix:
-  - appveyor_build_worker_cloud: lw-host-16-d
-  - appveyor_build_worker_cloud: lw-host-16-d
+  #- appveyor_build_worker_cloud: lw-host-16-d
+  #- appveyor_build_worker_cloud: lw-host-16-d
   #- appveyor_build_worker_cloud: lw-host-16-d
   #- appveyor_build_worker_cloud: lw-host-16-d
   #- appveyor_build_worker_cloud: lw-host-16-d
 
-  - appveyor_build_worker_cloud: lw-host-16-e
-  - appveyor_build_worker_cloud: lw-host-16-e
+  #- appveyor_build_worker_cloud: lw-host-16-e
+  #- appveyor_build_worker_cloud: lw-host-16-e
   #- appveyor_build_worker_cloud: lw-host-16-e
   #- appveyor_build_worker_cloud: lw-host-16-e
   #- appveyor_build_worker_cloud: lw-host-16-e
   
-  - appveyor_build_worker_cloud: lw-host-16-f
-  - appveyor_build_worker_cloud: lw-host-16-f
+  #- appveyor_build_worker_cloud: lw-host-16-f
+  #- appveyor_build_worker_cloud: lw-host-16-f
   #- appveyor_build_worker_cloud: lw-host-16-f
   #- appveyor_build_worker_cloud: lw-host-16-f
   #- appveyor_build_worker_cloud: lw-host-16-f
 
-  - appveyor_build_worker_cloud: lw-host-16-g
-  - appveyor_build_worker_cloud: lw-host-16-g
+  #- appveyor_build_worker_cloud: lw-host-16-g
+  #- appveyor_build_worker_cloud: lw-host-16-g
   #- appveyor_build_worker_cloud: lw-host-16-g
   #- appveyor_build_worker_cloud: lw-host-16-g
   #- appveyor_build_worker_cloud: lw-host-16-g
