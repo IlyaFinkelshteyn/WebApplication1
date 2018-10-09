@@ -12,49 +12,49 @@ environment:
   - appveyor_build_worker_cloud: lw-host-13-d
   - appveyor_build_worker_cloud: lw-host-13-d
   - appveyor_build_worker_cloud: lw-host-13-d
-  - appveyor_build_worker_cloud: lw-host-13-d
+  #- appveyor_build_worker_cloud: lw-host-13-d
 
   - appveyor_build_worker_cloud: lw-host-13-e
   - appveyor_build_worker_cloud: lw-host-13-e
   - appveyor_build_worker_cloud: lw-host-13-e
   - appveyor_build_worker_cloud: lw-host-13-e
-  - appveyor_build_worker_cloud: lw-host-13-e
+  #- appveyor_build_worker_cloud: lw-host-13-e
   
   - appveyor_build_worker_cloud: lw-host-13-f
   - appveyor_build_worker_cloud: lw-host-13-f
   - appveyor_build_worker_cloud: lw-host-13-f
   - appveyor_build_worker_cloud: lw-host-13-f
-  - appveyor_build_worker_cloud: lw-host-13-f
+  #- appveyor_build_worker_cloud: lw-host-13-f
 
   - appveyor_build_worker_cloud: lw-host-13-g
   - appveyor_build_worker_cloud: lw-host-13-g
   - appveyor_build_worker_cloud: lw-host-13-g
   - appveyor_build_worker_cloud: lw-host-13-g
-  - appveyor_build_worker_cloud: lw-host-13-g
+  #- appveyor_build_worker_cloud: lw-host-13-g
 
   - appveyor_build_worker_cloud: lw-host-13-i
   - appveyor_build_worker_cloud: lw-host-13-i
   - appveyor_build_worker_cloud: lw-host-13-i
   - appveyor_build_worker_cloud: lw-host-13-i
-  - appveyor_build_worker_cloud: lw-host-13-i
+  #- appveyor_build_worker_cloud: lw-host-13-i
 
   - appveyor_build_worker_cloud: lw-host-13-j
   - appveyor_build_worker_cloud: lw-host-13-j
   - appveyor_build_worker_cloud: lw-host-13-j
   - appveyor_build_worker_cloud: lw-host-13-j
-  - appveyor_build_worker_cloud: lw-host-13-j
+  #- appveyor_build_worker_cloud: lw-host-13-j
   
   - appveyor_build_worker_cloud: lw-host-13-k
   - appveyor_build_worker_cloud: lw-host-13-k
   - appveyor_build_worker_cloud: lw-host-13-k
   - appveyor_build_worker_cloud: lw-host-13-k
-  - appveyor_build_worker_cloud: lw-host-13-k
+  #- appveyor_build_worker_cloud: lw-host-13-k
 
   - appveyor_build_worker_cloud: lw-host-13-l
   - appveyor_build_worker_cloud: lw-host-13-l
   - appveyor_build_worker_cloud: lw-host-13-l
   - appveyor_build_worker_cloud: lw-host-13-l
-  - appveyor_build_worker_cloud: lw-host-13-l
+  #- appveyor_build_worker_cloud: lw-host-13-l
 
 services:
 - iis
