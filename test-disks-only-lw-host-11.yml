@@ -38,11 +38,11 @@ environment:
   - appveyor_build_worker_cloud: lw-host-11-i
   - appveyor_build_worker_cloud: lw-host-11-i
 
-  - appveyor_build_worker_cloud: lw-host-11-j
-  - appveyor_build_worker_cloud: lw-host-11-j
-  - appveyor_build_worker_cloud: lw-host-11-j
-  - appveyor_build_worker_cloud: lw-host-11-j
-  - appveyor_build_worker_cloud: lw-host-11-j
+  #- appveyor_build_worker_cloud: lw-host-11-j
+  #- appveyor_build_worker_cloud: lw-host-11-j
+  #- appveyor_build_worker_cloud: lw-host-11-j
+  #- appveyor_build_worker_cloud: lw-host-11-j
+  #- appveyor_build_worker_cloud: lw-host-11-j
   
   - appveyor_build_worker_cloud: lw-host-11-k
   - appveyor_build_worker_cloud: lw-host-11-k
@@ -50,11 +50,11 @@ environment:
   - appveyor_build_worker_cloud: lw-host-11-k
   - appveyor_build_worker_cloud: lw-host-11-k
 
-  - appveyor_build_worker_cloud: lw-host-11-l
-  - appveyor_build_worker_cloud: lw-host-11-l
-  - appveyor_build_worker_cloud: lw-host-11-l
-  - appveyor_build_worker_cloud: lw-host-11-l
-  - appveyor_build_worker_cloud: lw-host-11-l
+  #- appveyor_build_worker_cloud: lw-host-11-l
+  #- appveyor_build_worker_cloud: lw-host-11-l
+  #- appveyor_build_worker_cloud: lw-host-11-l
+  #- appveyor_build_worker_cloud: lw-host-11-l
+  #- appveyor_build_worker_cloud: lw-host-11-l
 
 services:
 - iis
