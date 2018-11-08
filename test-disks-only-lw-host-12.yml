@@ -4,7 +4,7 @@ image:
   - Visual Studio 2015
 
 install:
-- cmd: curl -L https://api.github.com/repos/SeleniumHQ/selenium/zipball/master -o a.zip
+#- cmd: curl -L https://api.github.com/repos/SeleniumHQ/selenium/zipball/master -o a.zip
 
 environment:
   matrix:
