@@ -3,6 +3,9 @@ version: 1.0.{build}
 image:   
   - Visual Studio 2015
 
+init:
+- appveyor version
+
 install:
 - cmd: curl -L https://api.github.com/repos/SeleniumHQ/selenium/zipball/master -o a.zip
 
