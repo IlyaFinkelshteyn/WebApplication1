@@ -15,49 +15,49 @@ environment:
   - appveyor_build_worker_cloud: lw-host-09-d
   - appveyor_build_worker_cloud: lw-host-09-d
   - appveyor_build_worker_cloud: lw-host-09-d
-  - appveyor_build_worker_cloud: lw-host-09-d
+  #- appveyor_build_worker_cloud: lw-host-09-d
 
   - appveyor_build_worker_cloud: lw-host-09-e
   - appveyor_build_worker_cloud: lw-host-09-e
   - appveyor_build_worker_cloud: lw-host-09-e
   - appveyor_build_worker_cloud: lw-host-09-e
-  - appveyor_build_worker_cloud: lw-host-09-e
+  #- appveyor_build_worker_cloud: lw-host-09-e
   
   - appveyor_build_worker_cloud: lw-host-09-f
   - appveyor_build_worker_cloud: lw-host-09-f
   - appveyor_build_worker_cloud: lw-host-09-f
   - appveyor_build_worker_cloud: lw-host-09-f
-  - appveyor_build_worker_cloud: lw-host-09-f
+  #- appveyor_build_worker_cloud: lw-host-09-f
 
   - appveyor_build_worker_cloud: lw-host-09-g
   - appveyor_build_worker_cloud: lw-host-09-g
   - appveyor_build_worker_cloud: lw-host-09-g
   - appveyor_build_worker_cloud: lw-host-09-g
-  - appveyor_build_worker_cloud: lw-host-09-g
+  #- appveyor_build_worker_cloud: lw-host-09-g
 
   - appveyor_build_worker_cloud: lw-host-09-i
   - appveyor_build_worker_cloud: lw-host-09-i
   - appveyor_build_worker_cloud: lw-host-09-i
   - appveyor_build_worker_cloud: lw-host-09-i
-  - appveyor_build_worker_cloud: lw-host-09-i
+  #- appveyor_build_worker_cloud: lw-host-09-i
 
   - appveyor_build_worker_cloud: lw-host-09-j
   - appveyor_build_worker_cloud: lw-host-09-j
   - appveyor_build_worker_cloud: lw-host-09-j
   - appveyor_build_worker_cloud: lw-host-09-j
-  - appveyor_build_worker_cloud: lw-host-09-j
+  #- appveyor_build_worker_cloud: lw-host-09-j
   
   - appveyor_build_worker_cloud: lw-host-09-k
   - appveyor_build_worker_cloud: lw-host-09-k
   - appveyor_build_worker_cloud: lw-host-09-k
   - appveyor_build_worker_cloud: lw-host-09-k
-  - appveyor_build_worker_cloud: lw-host-09-k
+  #- appveyor_build_worker_cloud: lw-host-09-k
 
   - appveyor_build_worker_cloud: lw-host-09-l
   - appveyor_build_worker_cloud: lw-host-09-l
   - appveyor_build_worker_cloud: lw-host-09-l
   - appveyor_build_worker_cloud: lw-host-09-l
-  - appveyor_build_worker_cloud: lw-host-09-l
+  #- appveyor_build_worker_cloud: lw-host-09-l
 
 services:
 - iis
