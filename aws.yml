@@ -55,49 +55,49 @@ environment:
   - appveyor_build_worker_cloud: aws-01-G
   - appveyor_build_worker_cloud: aws-01-G
   
-  - appveyor_build_worker_cloud: aws-01-H
-  - appveyor_build_worker_cloud: aws-01-H
-  - appveyor_build_worker_cloud: aws-01-H
-  - appveyor_build_worker_cloud: aws-01-H
-  - appveyor_build_worker_cloud: aws-01-H
-  - appveyor_build_worker_cloud: aws-01-H
-  - appveyor_build_worker_cloud: aws-01-H
-  - appveyor_build_worker_cloud: aws-01-H
-  - appveyor_build_worker_cloud: aws-01-H
-  - appveyor_build_worker_cloud: aws-01-H
+  # - appveyor_build_worker_cloud: aws-01-H
+  # - appveyor_build_worker_cloud: aws-01-H
+  # - appveyor_build_worker_cloud: aws-01-H
+  # - appveyor_build_worker_cloud: aws-01-H
+  # - appveyor_build_worker_cloud: aws-01-H
+  # - appveyor_build_worker_cloud: aws-01-H
+  # - appveyor_build_worker_cloud: aws-01-H
+  # - appveyor_build_worker_cloud: aws-01-H
+  # - appveyor_build_worker_cloud: aws-01-H
+  # - appveyor_build_worker_cloud: aws-01-H
   
-  - appveyor_build_worker_cloud: aws-01-I
-  - appveyor_build_worker_cloud: aws-01-I
-  - appveyor_build_worker_cloud: aws-01-I
-  - appveyor_build_worker_cloud: aws-01-I
-  - appveyor_build_worker_cloud: aws-01-I
-  - appveyor_build_worker_cloud: aws-01-I
-  - appveyor_build_worker_cloud: aws-01-I
-  - appveyor_build_worker_cloud: aws-01-I
-  - appveyor_build_worker_cloud: aws-01-I
-  - appveyor_build_worker_cloud: aws-01-I
+  # - appveyor_build_worker_cloud: aws-01-I
+  # - appveyor_build_worker_cloud: aws-01-I
+  # - appveyor_build_worker_cloud: aws-01-I
+  # - appveyor_build_worker_cloud: aws-01-I
+  # - appveyor_build_worker_cloud: aws-01-I
+  # - appveyor_build_worker_cloud: aws-01-I
+  # - appveyor_build_worker_cloud: aws-01-I
+  # - appveyor_build_worker_cloud: aws-01-I
+  # - appveyor_build_worker_cloud: aws-01-I
+  # - appveyor_build_worker_cloud: aws-01-I
   
-  - appveyor_build_worker_cloud: aws-01-J
-  - appveyor_build_worker_cloud: aws-01-J
-  - appveyor_build_worker_cloud: aws-01-J
-  - appveyor_build_worker_cloud: aws-01-J
-  - appveyor_build_worker_cloud: aws-01-J
-  - appveyor_build_worker_cloud: aws-01-J
-  - appveyor_build_worker_cloud: aws-01-J
-  - appveyor_build_worker_cloud: aws-01-J
-  - appveyor_build_worker_cloud: aws-01-J
-  - appveyor_build_worker_cloud: aws-01-J
+  # - appveyor_build_worker_cloud: aws-01-J
+  # - appveyor_build_worker_cloud: aws-01-J
+  # - appveyor_build_worker_cloud: aws-01-J
+  # - appveyor_build_worker_cloud: aws-01-J
+  # - appveyor_build_worker_cloud: aws-01-J
+  # - appveyor_build_worker_cloud: aws-01-J
+  # - appveyor_build_worker_cloud: aws-01-J
+  # - appveyor_build_worker_cloud: aws-01-J
+  # - appveyor_build_worker_cloud: aws-01-J
+  # - appveyor_build_worker_cloud: aws-01-J
   
-  - appveyor_build_worker_cloud: aws-01-K
-  - appveyor_build_worker_cloud: aws-01-K
-  - appveyor_build_worker_cloud: aws-01-K
-  - appveyor_build_worker_cloud: aws-01-K
-  - appveyor_build_worker_cloud: aws-01-K
-  - appveyor_build_worker_cloud: aws-01-K
-  - appveyor_build_worker_cloud: aws-01-K
-  - appveyor_build_worker_cloud: aws-01-K
-  - appveyor_build_worker_cloud: aws-01-K
-  - appveyor_build_worker_cloud: aws-01-K
+  # - appveyor_build_worker_cloud: aws-01-K
+  # - appveyor_build_worker_cloud: aws-01-K
+  # - appveyor_build_worker_cloud: aws-01-K
+  # - appveyor_build_worker_cloud: aws-01-K
+  # - appveyor_build_worker_cloud: aws-01-K
+  # - appveyor_build_worker_cloud: aws-01-K
+  # - appveyor_build_worker_cloud: aws-01-K
+  # - appveyor_build_worker_cloud: aws-01-K
+  # - appveyor_build_worker_cloud: aws-01-K
+  # - appveyor_build_worker_cloud: aws-01-K
   
 services:
 - iis
