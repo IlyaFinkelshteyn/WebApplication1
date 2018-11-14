@@ -1,7 +1,7 @@
 version: 1.0.{build}
 
 image:   
-  - Previous Visual Studio 2017
+  - Previous Visual Studio 2015
 
 init:
 - appveyor version
@@ -11,63 +11,17 @@ install:
 
 environment:
   matrix:
-  - appveyor_build_worker_cloud: aws-01-D
-  - appveyor_build_worker_cloud: aws-01-D
-
-  - appveyor_build_worker_cloud: aws-01-E
-  - appveyor_build_worker_cloud: aws-01-E
-
-  - appveyor_build_worker_cloud: aws-01-F
-  - appveyor_build_worker_cloud: aws-01-F
-
+  - appveyor_build_worker_cloud: aws-01-H
+  - appveyor_build_worker_cloud: aws-01-H
   
-  - appveyor_build_worker_cloud: aws-01-G
-  - appveyor_build_worker_cloud: aws-01-G
-
+  - appveyor_build_worker_cloud: aws-01-I
+  - appveyor_build_worker_cloud: aws-01-I
   
-  # - appveyor_build_worker_cloud: aws-01-H
-  # - appveyor_build_worker_cloud: aws-01-H
-  # - appveyor_build_worker_cloud: aws-01-H
-  # - appveyor_build_worker_cloud: aws-01-H
-  # - appveyor_build_worker_cloud: aws-01-H
-  # - appveyor_build_worker_cloud: aws-01-H
-  # - appveyor_build_worker_cloud: aws-01-H
-  # - appveyor_build_worker_cloud: aws-01-H
-  # - appveyor_build_worker_cloud: aws-01-H
-  # - appveyor_build_worker_cloud: aws-01-H
+  - appveyor_build_worker_cloud: aws-01-J
+  - appveyor_build_worker_cloud: aws-01-J
   
-  # - appveyor_build_worker_cloud: aws-01-I
-  # - appveyor_build_worker_cloud: aws-01-I
-  # - appveyor_build_worker_cloud: aws-01-I
-  # - appveyor_build_worker_cloud: aws-01-I
-  # - appveyor_build_worker_cloud: aws-01-I
-  # - appveyor_build_worker_cloud: aws-01-I
-  # - appveyor_build_worker_cloud: aws-01-I
-  # - appveyor_build_worker_cloud: aws-01-I
-  # - appveyor_build_worker_cloud: aws-01-I
-  # - appveyor_build_worker_cloud: aws-01-I
-  
-  # - appveyor_build_worker_cloud: aws-01-J
-  # - appveyor_build_worker_cloud: aws-01-J
-  # - appveyor_build_worker_cloud: aws-01-J
-  # - appveyor_build_worker_cloud: aws-01-J
-  # - appveyor_build_worker_cloud: aws-01-J
-  # - appveyor_build_worker_cloud: aws-01-J
-  # - appveyor_build_worker_cloud: aws-01-J
-  # - appveyor_build_worker_cloud: aws-01-J
-  # - appveyor_build_worker_cloud: aws-01-J
-  # - appveyor_build_worker_cloud: aws-01-J
-  
-  # - appveyor_build_worker_cloud: aws-01-K
-  # - appveyor_build_worker_cloud: aws-01-K
-  # - appveyor_build_worker_cloud: aws-01-K
-  # - appveyor_build_worker_cloud: aws-01-K
-  # - appveyor_build_worker_cloud: aws-01-K
-  # - appveyor_build_worker_cloud: aws-01-K
-  # - appveyor_build_worker_cloud: aws-01-K
-  # - appveyor_build_worker_cloud: aws-01-K
-  # - appveyor_build_worker_cloud: aws-01-K
-  # - appveyor_build_worker_cloud: aws-01-K
+  - appveyor_build_worker_cloud: aws-01-K
+  - appveyor_build_worker_cloud: aws-01-K
   
 services:
 - iis
