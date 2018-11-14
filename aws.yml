@@ -13,47 +13,17 @@ environment:
   matrix:
   - appveyor_build_worker_cloud: aws-01-D
   - appveyor_build_worker_cloud: aws-01-D
-  - appveyor_build_worker_cloud: aws-01-D
-  - appveyor_build_worker_cloud: aws-01-D
-  - appveyor_build_worker_cloud: aws-01-D
-  - appveyor_build_worker_cloud: aws-01-D
-  - appveyor_build_worker_cloud: aws-01-D
-  - appveyor_build_worker_cloud: aws-01-D
-  - appveyor_build_worker_cloud: aws-01-D
-  - appveyor_build_worker_cloud: aws-01-D
 
-  - appveyor_build_worker_cloud: aws-01-E
-  - appveyor_build_worker_cloud: aws-01-E
-  - appveyor_build_worker_cloud: aws-01-E
-  - appveyor_build_worker_cloud: aws-01-E
-  - appveyor_build_worker_cloud: aws-01-E
-  - appveyor_build_worker_cloud: aws-01-E
-  - appveyor_build_worker_cloud: aws-01-E
-  - appveyor_build_worker_cloud: aws-01-E
   - appveyor_build_worker_cloud: aws-01-E
   - appveyor_build_worker_cloud: aws-01-E
 
   - appveyor_build_worker_cloud: aws-01-F
   - appveyor_build_worker_cloud: aws-01-F
-  - appveyor_build_worker_cloud: aws-01-F
-  - appveyor_build_worker_cloud: aws-01-F
-  - appveyor_build_worker_cloud: aws-01-F
-  - appveyor_build_worker_cloud: aws-01-F
-  - appveyor_build_worker_cloud: aws-01-F
-  - appveyor_build_worker_cloud: aws-01-F
-  - appveyor_build_worker_cloud: aws-01-F
-  - appveyor_build_worker_cloud: aws-01-F
+
   
   - appveyor_build_worker_cloud: aws-01-G
   - appveyor_build_worker_cloud: aws-01-G
-  - appveyor_build_worker_cloud: aws-01-G
-  - appveyor_build_worker_cloud: aws-01-G
-  - appveyor_build_worker_cloud: aws-01-G
-  - appveyor_build_worker_cloud: aws-01-G
-  - appveyor_build_worker_cloud: aws-01-G
-  - appveyor_build_worker_cloud: aws-01-G
-  - appveyor_build_worker_cloud: aws-01-G
-  - appveyor_build_worker_cloud: aws-01-G
+
   
   # - appveyor_build_worker_cloud: aws-01-H
   # - appveyor_build_worker_cloud: aws-01-H
