@@ -62,4 +62,4 @@ build:
 test: off
 
 on_finish:
-  - ps: if ($env:appveyor_build_worker_cloud -eq "aws-01-K") {$blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))}
+  - ps: if ($env:appveyor_build_worker_cloud -eq "lw-host-20-g") {$blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))}
