@@ -1,0 +1,65 @@
+version: 1.0.{build}
+
+init:
+- appveyor version
+
+install:
+- cmd: curl -L https://api.github.com/repos/SeleniumHQ/selenium/zipball/master -o a.zip
+
+cache:
+- aws.yml
+
+environment:
+  matrix:
+      - appveyor_build_worker_cloud: lw-host-20-d
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      - appveyor_build_worker_cloud: lw-host-20-d
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017        
+      - appveyor_build_worker_cloud: lw-host-20-d
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      - appveyor_build_worker_cloud: lw-host-20-d
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+        
+      - appveyor_build_worker_cloud: lw-host-20-e
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      - appveyor_build_worker_cloud: lw-host-20-e
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      - appveyor_build_worker_cloud: lw-host-20-e
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      - appveyor_build_worker_cloud: lw-host-20-e
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017                
+  
+      - appveyor_build_worker_cloud: lw-host-20-f
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-20-f
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-20-f
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-20-f
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+
+      - appveyor_build_worker_cloud: lw-host-20-g
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-20-g
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-20-g
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-20-g
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015      
+      
+services:
+- iis
+- mssql2014
+
+before_build:
+- ps: if ((Get-Service 'MSSQL$SQL2014').Status -ne "Running") {throw "SQL did not start"}
+- cmd: nuget restore
+
+build:
+  publish_wap_beanstalk: true
+  verbosity: quiet
+  
+test: off
+
+#on_finish:
+#  - ps: if ($env:appveyor_build_worker_cloud -eq "aws-01-K") {$blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))}
