@@ -16,5 +16,5 @@ before_deploy:
 deploy:
 - provider: Environment
   name: IIS2
-  APPVEYOR_SCHEDULED_BUIL: $(APPVEYOR_SCHEDULED_BUIL)
+  APPVEYOR_SCHEDULED_BUILD: $(APPVEYOR_SCHEDULED_BUILD)
 # test change 2
