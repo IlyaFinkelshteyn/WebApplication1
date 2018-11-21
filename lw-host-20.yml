@@ -11,73 +11,41 @@ cache:
 
 environment:
   matrix:
-      #- appveyor_build_worker_cloud: lw-host-20-d
-      #  APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      #- appveyor_build_worker_cloud: lw-host-20-d
-      #  APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017        
-      #- appveyor_build_worker_cloud: lw-host-20-d
-      #  APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      #- appveyor_build_worker_cloud: lw-host-20-d
-      #  APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      #- appveyor_build_worker_cloud: lw-host-20-d
-      #  APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      #- appveyor_build_worker_cloud: lw-host-20-d
-      #  APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017        
-      #- appveyor_build_worker_cloud: lw-host-20-d
-      #  APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      #- appveyor_build_worker_cloud: lw-host-20-d
-      #  APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      - appveyor_build_worker_cloud: lw-host-20-d
+      - appveyor_build_worker_cloud: lw-host-20-d        
+      - appveyor_build_worker_cloud: lw-host-20-d
+      - appveyor_build_worker_cloud: lw-host-20-d
+      - appveyor_build_worker_cloud: lw-host-20-d
+      - appveyor_build_worker_cloud: lw-host-20-d        
+      - appveyor_build_worker_cloud: lw-host-20-d
+      - appveyor_build_worker_cloud: lw-host-20-d
         
-      #- appveyor_build_worker_cloud: lw-host-20-e
-      #  APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      #- appveyor_build_worker_cloud: lw-host-20-e
-      #  APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      #- appveyor_build_worker_cloud: lw-host-20-e
-      #  APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      #- appveyor_build_worker_cloud: lw-host-20-e
-      #  APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017 
-      #- appveyor_build_worker_cloud: lw-host-20-e
-      #  APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      #- appveyor_build_worker_cloud: lw-host-20-e
-      #  APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      #- appveyor_build_worker_cloud: lw-host-20-e
-      #  APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      #- appveyor_build_worker_cloud: lw-host-20-e
-      #  APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017 
+      - appveyor_build_worker_cloud: lw-host-20-e
+      - appveyor_build_worker_cloud: lw-host-20-e
+      - appveyor_build_worker_cloud: lw-host-20-e
+      - appveyor_build_worker_cloud: lw-host-20-e 
+      - appveyor_build_worker_cloud: lw-host-20-e
+      - appveyor_build_worker_cloud: lw-host-20-e
+      - appveyor_build_worker_cloud: lw-host-20-e
+      - appveyor_build_worker_cloud: lw-host-20-e 
   
       - appveyor_build_worker_cloud: lw-host-20-f
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
       - appveyor_build_worker_cloud: lw-host-20-f
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
       - appveyor_build_worker_cloud: lw-host-20-f
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
       - appveyor_build_worker_cloud: lw-host-20-f
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
       - appveyor_build_worker_cloud: lw-host-20-f
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
       - appveyor_build_worker_cloud: lw-host-20-f
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
       - appveyor_build_worker_cloud: lw-host-20-f
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
       - appveyor_build_worker_cloud: lw-host-20-f
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
 
       - appveyor_build_worker_cloud: lw-host-20-g
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
       - appveyor_build_worker_cloud: lw-host-20-g
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
       - appveyor_build_worker_cloud: lw-host-20-g
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-20-g 
       - appveyor_build_worker_cloud: lw-host-20-g
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015 
       - appveyor_build_worker_cloud: lw-host-20-g
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
       - appveyor_build_worker_cloud: lw-host-20-g
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-      - appveyor_build_worker_cloud: lw-host-20-g
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-      - appveyor_build_worker_cloud: lw-host-20-g
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015 
+      - appveyor_build_worker_cloud: lw-host-20-g 
       
 services:
 - iis
@@ -93,5 +61,3 @@ build:
   
 test: off
 
-#on_finish:
-#  - ps: if ($env:appveyor_build_worker_cloud -eq "lw-host-20-g") {$blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))}
