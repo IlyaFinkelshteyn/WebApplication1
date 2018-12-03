@@ -13,52 +13,37 @@ environment:
   matrix:
       - appveyor_build_worker_cloud: aws-01-D
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-
       - appveyor_build_worker_cloud: aws-01-D
         APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
   
       - appveyor_build_worker_cloud: aws-01-E
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-
       - appveyor_build_worker_cloud: aws-01-E
         APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
   
       - appveyor_build_worker_cloud: aws-01-F
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  
-
       - appveyor_build_worker_cloud: aws-01-F
         APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
   
       - appveyor_build_worker_cloud: aws-01-G
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
       - appveyor_build_worker_cloud: aws-01-G
-        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
   
       - appveyor_build_worker_cloud: aws-01-H
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-
       - appveyor_build_worker_cloud: aws-01-H
         APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
-
   
       - appveyor_build_worker_cloud: aws-01-I
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-
       - appveyor_build_worker_cloud: aws-01-I
         APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
 
       - appveyor_build_worker_cloud: aws-01-J
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-
       - appveyor_build_worker_cloud: aws-01-J
-        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
-
-      - appveyor_build_worker_cloud: aws-01-K
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-
-      - appveyor_build_worker_cloud: aws-01-K
         APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
     
 services:
