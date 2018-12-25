@@ -22,14 +22,10 @@ environment:
         APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
   
       - appveyor_build_worker_cloud: lw-host-08-F
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-      - appveyor_build_worker_cloud: lw-host-08-F
-        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013      
   
       - appveyor_build_worker_cloud: lw-host-08-G
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-      - appveyor_build_worker_cloud: lw-host-08-G
-        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013      
 
 services:
 - iis
