@@ -11,14 +11,14 @@ cache:
 
 environment:
   matrix:
-      - appveyor_build_worker_cloud: lw-host-03-D
+      - appveyor_build_worker_cloud: lw-host-02-D
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      - appveyor_build_worker_cloud: lw-host-03-D
+      - appveyor_build_worker_cloud: lw-host-02-D
         APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
   
-      - appveyor_build_worker_cloud: lw-host-03-E
+      - appveyor_build_worker_cloud: lw-host-02-E
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      - appveyor_build_worker_cloud: lw-host-03-E
+      - appveyor_build_worker_cloud: lw-host-02-E
         APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
   
       - appveyor_build_worker_cloud: lw-host-02-F
