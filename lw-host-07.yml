@@ -11,14 +11,18 @@ cache:
 
 environment:
   matrix:
-  
-
-  
+      - appveyor_build_worker_cloud: lw-host-07-d
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      
+      - appveyor_build_worker_cloud: lw-host-07-e
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      
+      - appveyor_build_worker_cloud: lw-host-07-f
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+ 
       - appveyor_build_worker_cloud: lw-host-07-G
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      - appveyor_build_worker_cloud: lw-host-07-G
-        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
-
+        
 services:
 - iis
 - mssql2014
