@@ -11,15 +11,15 @@ cache:
 
 environment:
   matrix:
-      - appveyor_build_worker_cloud: lw-host-06-F
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-      - appveyor_build_worker_cloud: lw-host-06-F
-        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-06-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      - appveyor_build_worker_cloud: lw-host-06-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
   
-      - appveyor_build_worker_cloud: lw-host-06-G
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-      - appveyor_build_worker_cloud: lw-host-06-G
-        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-06-E
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      - appveyor_build_worker_cloud: lw-host-06-E
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
         
 services:
 - iis
