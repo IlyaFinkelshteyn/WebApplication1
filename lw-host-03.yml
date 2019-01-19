@@ -12,6 +12,26 @@ cache:
 environment:
   matrix:
       - appveyor_build_worker_cloud: lw-host-03-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-03-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
+  
+      - appveyor_build_worker_cloud: lw-host-03-E
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-03-E
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
+  
+      - appveyor_build_worker_cloud: lw-host-03-F
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-03-F
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
+  
+      - appveyor_build_worker_cloud: lw-host-03-G
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-03-G
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
+        
+      - appveyor_build_worker_cloud: lw-host-03-D
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       - appveyor_build_worker_cloud: lw-host-03-D
         APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
@@ -30,7 +50,6 @@ environment:
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       - appveyor_build_worker_cloud: lw-host-03-G
         APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
- 
 
 services:
 - iis
@@ -46,5 +65,5 @@ build:
   
 test: off
 
-on_finish:
-  - ps: if ($env:appveyor_build_worker_cloud -eq "lw-host-03-G") {$blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))}
+#on_finish:
+#  - ps: if ($env:appveyor_build_worker_cloud -eq "lw-host-03-K") {$blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))}
