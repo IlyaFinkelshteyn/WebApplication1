@@ -12,32 +12,32 @@ cache:
 
 environment:
   matrix:
-      - appveyor_build_worker_cloud: lw-host-05-d
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-01-d
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       
-      - appveyor_build_worker_cloud: lw-host-05-d
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-01-d
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       
-      - appveyor_build_worker_cloud: lw-host-05-d
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-01-d
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
  
-      - appveyor_build_worker_cloud: lw-host-06-d
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-01-d
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
         
-      - appveyor_build_worker_cloud: lw-host-06-d
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-01-d
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       
-      - appveyor_build_worker_cloud: lw-host-06-d
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-01-d
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       
-      - appveyor_build_worker_cloud: lw-host-07-d
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-01-d
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
  
-      - appveyor_build_worker_cloud: lw-host-07-d
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-01-d
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
 
-      - appveyor_build_worker_cloud: lw-host-07-d
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-01-d
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
         
 services:
 - iis
