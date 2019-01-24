@@ -11,50 +11,50 @@ cache:
 
 environment:
   matrix:
-      - appveyor_build_worker_cloud: aws-01-H
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      - appveyor_build_worker_cloud: aws-01-H
-        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
+      - appveyor_build_worker_cloud: aws-01-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: aws-01-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
   
-      - appveyor_build_worker_cloud: aws-01-H
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      - appveyor_build_worker_cloud: aws-01-H
-        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
+      - appveyor_build_worker_cloud: aws-01-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: aws-01-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
   
-      - appveyor_build_worker_cloud: aws-01-H
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      - appveyor_build_worker_cloud: aws-01-H
-        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
+      - appveyor_build_worker_cloud: aws-01-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: aws-01-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
   
-      - appveyor_build_worker_cloud: aws-01-H
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      - appveyor_build_worker_cloud: aws-01-H
-        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
+      - appveyor_build_worker_cloud: aws-01-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: aws-01-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
   
-      - appveyor_build_worker_cloud: aws-01-H
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      - appveyor_build_worker_cloud: aws-01-H
-        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
+      - appveyor_build_worker_cloud: aws-01-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: aws-01-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
   
-      - appveyor_build_worker_cloud: aws-01-H
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      - appveyor_build_worker_cloud: aws-01-H
-        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
+      - appveyor_build_worker_cloud: aws-01-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: aws-01-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
 
-      - appveyor_build_worker_cloud: aws-01-H
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      - appveyor_build_worker_cloud: aws-01-H
-        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
+      - appveyor_build_worker_cloud: aws-01-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: aws-01-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
   
-      - appveyor_build_worker_cloud: aws-01-H
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      - appveyor_build_worker_cloud: aws-01-H
-        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
+      - appveyor_build_worker_cloud: aws-01-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: aws-01-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
   
-      - appveyor_build_worker_cloud: aws-01-H
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      - appveyor_build_worker_cloud: aws-01-H
-        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
+      - appveyor_build_worker_cloud: aws-01-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: aws-01-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
   
     
 services:
