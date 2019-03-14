@@ -22,10 +22,34 @@ environment:
         APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
   
       - appveyor_build_worker_cloud: lw-host-08-F
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013      
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-08-F
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
   
       - appveyor_build_worker_cloud: lw-host-08-G
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013      
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      - appveyor_build_worker_cloud: lw-host-08-G
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2015
+        
+      - appveyor_build_worker_cloud: lw-host-08-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      - appveyor_build_worker_cloud: lw-host-08-D
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
+  
+      - appveyor_build_worker_cloud: lw-host-08-E
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      - appveyor_build_worker_cloud: lw-host-08-E
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
+  
+      - appveyor_build_worker_cloud: lw-host-08-F
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      - appveyor_build_worker_cloud: lw-host-08-F
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
+  
+      - appveyor_build_worker_cloud: lw-host-08-G
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      - appveyor_build_worker_cloud: lw-host-08-G
+        APPVEYOR_BUILD_WORKER_IMAGE: Previous Visual Studio 2017
 
 services:
 - iis
@@ -42,4 +66,4 @@ build:
 test: off
 
 on_finish:
-  - ps: if ($env:appveyor_build_worker_cloud -eq "lw-host-08-D" -or $env:appveyor_build_worker_cloud -eq "lw-host-08-G") {$blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))}
+  - ps: if ($env:appveyor_build_worker_cloud -eq "lw-host-08-g") {$blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))}
